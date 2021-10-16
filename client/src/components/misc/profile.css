@@ -1,0 +1,40 @@
+.about{
+    margin-top: 200px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-title{
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.about-content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-title{
+    color: limegreen;
+}
+
+.about-content .name{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     margin-top: 45px;
+     text-align: center;
+
+}
+
+.about-content .photo img{
+    margin-top: 50px;
+    height: 250px;
+    border-radius: 50%;
+    border: 7px solid greenyellow;
+
+}
