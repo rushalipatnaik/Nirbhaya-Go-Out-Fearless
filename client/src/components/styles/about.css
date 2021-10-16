@@ -1,0 +1,42 @@
+.about{
+    height: 100vh;
+    width: 100vw;
+}
+.aboutus{
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+}
+.aboutus h1{
+    font-size: 5rem;
+    font-family: 'Architects Daughter', cursive;
+   text-shadow: 2px 2px 5px rgb(209, 67, 115);
+}
+.about_us{
+    height: 90vh;
+    width: 100vw;
+    display: flex; 
+}
+.about1{
+   height: 80vh;
+   width: 50vw;
+   background-image: url(../img/about.png);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-left: 7rem;
+   
+}
+.about2{
+   height: 80vh;
+   width: 50vw;
+   padding-top: 5rem;
+   color: gray;
+   font-size: 2rem;
+   
+}
+.about2 h1{
+    font-size: 5rem;
+    color: #e09798;
+}
