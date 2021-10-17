@@ -26,7 +26,7 @@ function HeroDash() {
       <HeroHeader />
       <HeroHome />
       <HeroHelp data={data} />
-      {/* <Profile/> */}
+      <Profile/> 
       <Footer />
     </div>
   )
