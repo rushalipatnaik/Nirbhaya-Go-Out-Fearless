@@ -18,6 +18,7 @@ function Profile() {
         const json = await ky
           .get(`${process.env.REACT_APP_BACKEND_URL}/user/${uid}`)
           .json()
+
         // if (json && json.isVerified) {
         if (json) {
           setInput1(json.contacts[0])
@@ -26,8 +27,6 @@ function Profile() {
             'contacts',
             JSON.stringify([json.contacts[0], json.contacts[1]])
           )
-        } else {
-          window.location.href = 'https://aadhar-verify.herokuapp.com/'
         }
       } catch (err) {
         console.log(err)
@@ -72,7 +71,7 @@ function Profile() {
                 <InputLabel>Contact 1</InputLabel>
                 <Input
                   className="input-value"
-                  placeholder={input1}
+                  value={input1}
                   onChange={(event) => setInput1(event.target.value)}
                 />
               </FormControl>
@@ -82,7 +81,7 @@ function Profile() {
                 <InputLabel>Contact 2</InputLabel>
                 <Input
                   className="input-value"
-                  placeholder={input2}
+                  value={input2}
                   onChange={(event) => setInput2(event.target.value)}
                 />
               </FormControl>
